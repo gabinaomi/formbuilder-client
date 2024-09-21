@@ -5968,6 +5968,11 @@ vue@^2.6.14:
     "@vue/compiler-sfc" "2.7.16"
     csstype "^3.1.0"
 
+vuetify@2.6.0:
+  version "2.6.0"
+  resolved "https://registry.yarnpkg.com/vuetify/-/vuetify-2.6.0.tgz#7fcb8ec7b122760750b5c028a15188e3ab45158c"
+  integrity sha512-a3gClGGY8FYIHvHtqDDmVnmTg8D5pPPcs3HYqdrmJ7b3RrF+bWlpqpAhUPVvD9ByYYWVKba4viAlhOc74meGsg==
+
 watchpack@^2.4.0, watchpack@^2.4.1:
   version "2.4.2"
   resolved "https://registry.yarnpkg.com/watchpack/-/watchpack-2.4.2.tgz#2feeaed67412e7c33184e5a79ca738fbd38564da"
