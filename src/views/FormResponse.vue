@@ -3,7 +3,16 @@
     <v-form ref="form" v-model="valid">
       <v-row class="mx-auto">
         <v-col v-for="field in fields" :key="field.id" cols="12" class="pa-3">
-          <template v-if="field.type === 'v-text-field'">
+          <template v-if="field.type === 'VCurrencyField'">
+            <v-currency-field
+              v-model="formData[field.id]"
+              :label="field.title"
+              :required="field.mandatory"
+              prefix="R$"
+            ></v-currency-field>
+          </template>
+
+          <template v-else-if="field.type === 'v-text-field'">
             <v-text-field
               v-model="formData[field.id]"
               :label="field.title"
@@ -28,6 +37,9 @@
           </template>
         </v-col>
       </v-row>
+      <v-alert v-if="alert" type="success" dismissible>
+        Formulário enviado com sucesso. Respostas: {{ formData }}
+      </v-alert>
       <v-btn @click="submit" :disabled="!valid" color="primary">Enviar</v-btn>
     </v-form>
   </v-container>
@@ -40,22 +52,32 @@ export default {
       valid: false,
       formData: {},
       fields: [],
+      alert: false,
     };
   },
   beforeMount() {
     this.getForm();
+    this.loadFormData();
   },
   methods: {
     submit() {
-      console.log(this.formData);
+      localStorage.setItem("formData", JSON.stringify(this.formData));
+      this.alert = true;
     },
     getForm() {
       const storedFields = localStorage.getItem("fields");
       if (storedFields) {
         this.fields = JSON.parse(storedFields);
-        console.log(this.fields);
+      }
+    },
+    loadFormData() {
+      const storedFormData = localStorage.getItem("formData");
+      if (storedFormData) {
+        this.formData = JSON.parse(storedFormData);
       }
     },
   },
 };
 </script>
+
+<style scoped></style>
