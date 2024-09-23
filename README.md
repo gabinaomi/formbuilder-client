@@ -62,7 +62,7 @@ Open [http://localhost:8081/](http://localhost:8081/) to view it in the browser.
 - [Vuetify](https://vuetifyjs.com/en/) Para biblioteca de componentes, utilizei Vuetify por já trazer componentes prontos e robustos, aplicável pelo desafio proposto. 
 - [Vue Router](https://router.vuejs.org/) Vue Router para navegação entre as páginas.
 - [vuedraggable](https://www.npmjs.com/package/vuedraggable) vuedraggable para que seja possível arrastar e soltar os componentes de pergunta e modificar sua ordem de forma fácil.
-- [VCurrencyField](https://www.npmjs.com/package/v-currency-field E VCurrencyField para que seja possível customizar campos de valores monetários, incluindo máscaras e algumas validações.
+- [VCurrencyField](https://www.npmjs.com/package/v-currency-field) E VCurrencyField para que seja possível customizar campos de valores monetários, incluindo máscaras e algumas validações.
 
 ## Documentation | Documentação
 
