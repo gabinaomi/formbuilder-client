@@ -70,9 +70,10 @@ Construtor: Para acessar o contrutor de formulários, clique na opção "Constru
 
 
 Resposta: Para acessar o formulário de resposta, clique na opção "Resposta". Preencha os dados e ao finalizar, clique em "Enviar".
-![screencapture-localhost-8081-formbuilder-2024-09-23-15_04_15 (1)](https://github.com/user-attachments/assets/e75fb13f-b3a3-4a02-97e4-c7bdc5edabd7)
 
-![screencapture-localhost-8081-formbuilder-2024-09-23-15_04_15 (1)](https://github.com/user-attachments/assets/c050d646-9e13-48e5-96d5-3b12c0b97546)
+![screencapture-localhost-8081-formresponse-2024-09-23-15_08_58](https://github.com/user-attachments/assets/22990e68-3a3b-4121-a4be-96189948265c)
+
+
 
 
 @author: Gabriela Naomi Kamimoto de Souza | https://gabinaomi.github.io/
