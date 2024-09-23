@@ -2,25 +2,19 @@
   <v-container>
     <v-form ref="form" v-model="valid">
       <v-row class="mx-auto">
-        <v-col
-          v-for="field in fields"
-          :key="field.id"
-          cols="12"
-          md="6"
-          class="pa-3"
-        >
+        <v-col v-for="field in fields" :key="field.id" cols="12" class="pa-3">
           <template v-if="field.type === 'v-text-field'">
             <v-text-field
-              v-model="form1"
+              v-model="formData[field.id]"
               :label="field.title"
               :required="field.mandatory"
-              :type="field.type === 'v-text-field' ? 'text' : 'number'"
+              type="text"
             ></v-text-field>
           </template>
 
           <template v-else-if="field.type === 'v-radio-button'">
             <v-radio-group
-              v-model="form2"
+              v-model="formData[field.id]"
               :required="field.mandatory"
               :label="field.title"
             >
@@ -56,11 +50,12 @@ export default {
       console.log(this.formData);
     },
     getForm() {
-      this.fields = localStorage.getItem("fields");
-      console.log(this.fields);
+      const storedFields = localStorage.getItem("fields");
+      if (storedFields) {
+        this.fields = JSON.parse(storedFields);
+        console.log(this.fields);
+      }
     },
   },
 };
 </script>
-
-<style scoped></style>

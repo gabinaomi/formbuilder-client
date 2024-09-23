@@ -78,6 +78,12 @@
                         <v-icon>mdi-plus</v-icon>
                       </v-btn>
                     </v-col>
+                    <v-col cols="12" class="mt-auto d-flex justify-start">
+                      <v-switch
+                        v-model="field.allowOther"
+                        label="Permitir adicionar 'Outros'"
+                      ></v-switch>
+                    </v-col>
                   </v-row>
                 </v-col>
                 <v-row class="mx-auto">
@@ -193,6 +199,7 @@ export default {
         options: [],
         score: 0,
         mandatory: true,
+        allowOther: false,
       };
       this.fields.push(newField);
     },

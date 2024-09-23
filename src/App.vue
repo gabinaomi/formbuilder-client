@@ -1,31 +1,24 @@
 <template>
-  <v-app id="app">
-    <v-app-bar class>
-      <!-- <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon> -->
-
+  <v-app>
+    <v-app-bar max-height="70px">
       <v-app-bar-title>Construtor de Formulários | FormBuilder</v-app-bar-title>
+
+      <router-link
+        to="/formbuilder"
+        class="ma-3 text-uppercase text-decoration-none"
+        >Construtor</router-link
+      >
+      <router-link
+        to="/formresponse"
+        class="ma-3 text-uppercase text-decoration-none"
+        >Resposta</router-link
+      >
+
+      <v-spacer></v-spacer>
     </v-app-bar>
 
-    <!-- <v-navigation-drawer v-model="drawer" temporary>
-      <v-list>
-        <v-list-item
-          v-for="(item, i) in items"
-          :key="i"
-          :value="item"
-          color="primary"
-        >
-          <template v-slot:prepend>
-            <v-icon>{{ item.icon }}</v-icon>
-          </template>
-
-          <v-list-item-title>
-            <router-link :to="item.route">{{ item.text }}</router-link>
-          </v-list-item-title>
-        </v-list-item>
-      </v-list>
-    </v-navigation-drawer> -->
     <router-view />
-    <v-main class="bg-grey-lighten-2"> </v-main>
+    <v-main class="bg-grey-lighten-2 pa-0"> </v-main>
   </v-app>
 </template>
 
