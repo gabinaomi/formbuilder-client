@@ -57,17 +57,16 @@ Open [http://localhost:8081/](http://localhost:8081/) to view it in the browser.
 
 
 
-## Stack
-- [Vue 2 + Javascript](https://vuejs.org/)
-- [Vuetify](https://vuetifyjs.com/en/)
-- [Vue Router](https://router.vuejs.org/)
-- [VueUse](https://vueuse.org/guide/)
-- [vuedraggable](https://www.npmjs.com/package/vuedraggable)
-- [VCurrencyField](https://www.npmjs.com/package/v-currency-field)
+## Stack e Explicações.
+- [Vue 2 + Javascript](https://vuejs.org/) Foi utilizado framework VueJS 2 conforme solicitado no desafio e devido familiaridade com a stack.
+- [Vuetify](https://vuetifyjs.com/en/) Para biblioteca de componentes, utilizei Vuetify por já trazer componentes prontos e robustos, aplicável pelo desafio proposto. 
+- [Vue Router](https://router.vuejs.org/) Vue Router para navegação entre as páginas.
+- [vuedraggable](https://www.npmjs.com/package/vuedraggable) vuedraggable para que seja possível arrastar e soltar os componentes de pergunta e modificar sua ordem de forma fácil.
+- [VCurrencyField](https://www.npmjs.com/package/v-currency-field E VCurrencyField para que seja possível customizar campos de valores monetários, incluindo máscaras e algumas validações.
 
 ## Documentation | Documentação
 
-Construtor: Para acessar o contrutor de formulários, clique na opção "Construtor". Adicione todos os campos que desejar, incluindo suas opções, quando necessário. Assim que concluir, clique em "Enviar Formulário".
+Construtor: Para acessar o contrutor de formulários, clique na opção "Construtor". Adicione todos os campos que desejar, incluindo suas opções, quando necessário.É possível mudar a ordem das perguntas arrastando o componente. Assim que concluir, clique em "Enviar Formulário".
  
 ![screencapture-localhost-8081-formbuilder-2024-09-23-15_02_24](https://github.com/user-attachments/assets/d76bf127-ba93-4dd7-a8c8-f391edeac7d9)
 
