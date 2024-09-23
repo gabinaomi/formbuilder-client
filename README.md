@@ -38,7 +38,12 @@ Dentro do diretório do projeto, você pode executar:
 Install all project dependencies.
 
 Instale todas as dependências do projeto.
+
+### `yarn lint`
  
+Enforce code style and linter fixes.
+
+Garanta estilo de código e correção com o linter.
 
 ### `yarn serve`
 
